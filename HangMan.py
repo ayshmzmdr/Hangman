@@ -3,6 +3,7 @@ from nltk.corpus import words
 
 wordList=words.words()
 word=random.choice(wordList)
+word=word.lower()
 
 print("Welcome to Hangman game\nUse only lowercase letters: GOOD LUCK!")
 
