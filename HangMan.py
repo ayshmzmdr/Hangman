@@ -10,7 +10,7 @@ print("Welcome to Hangman game\nUse only lowercase letters: GOOD LUCK!")
 guess="-"*len(word)
 lives=6
 
-hang='''         +---------|
+hang='''         +---------+
          |         |
                    |
                    |
@@ -38,42 +38,42 @@ while lives!=0:
     if wrong==True:
         lives=lives-1
         if lives==5:
-            hang='''                     +---------|
+            hang='''                     +---------+
                      |         |
                      O         |
                                |
                                |
                                |'''
         elif lives==4:
-            hang='''                     +---------|
+            hang='''                     +---------+
                      |         |
                      O         |
                      |         |
                                |
                                |'''
         elif lives==3:
-            hang='''                     +---------|
+            hang='''                     +---------+
                      |         |
                      O         |
                     \\|         |
                                |
                                |'''
         elif lives==2:
-            hang='''                     +---------|
+            hang='''                     +---------+
                      |         |
                      O         |
                     \\|/        |
                                |
                                |'''
         elif lives==1:
-            hang='''                     +---------|
+            hang='''                     +---------+
                      |         |
                      O         |
                     \\|/        |
                      |         |
                     /          |'''
         elif lives==0:
-            hang='''                     +---------|
+            hang='''                     +---------+
                      |         |
                      O         |
                     \\|/        |
